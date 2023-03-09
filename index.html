@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80c541c44d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body> 
+<!-----------------------------CONTAINER FOR TIMER-------------------------------->
+
+<div class="timer-container">
+    <div id="countdowntimer">00:</div>
+    <div id="countdowntimer">00:</div>
+    <div id="countdowntimer">00</div>
+    
+</div>
+<div class="playAndPause">
+<button class="play" onclick="play()">PLAY</button>
+<button class="pause" onclick="pause()">PAUSE</button>
+</div>
+
+
+
+<!-----------------------------SECTION FOR GUEST AND HOME CONTAINER  -------------------------------->
+
+    <div class="btn-ctn-gh">
+    <h3 id="home-btn">GUEST</h3>
+    <h3 id="guest-btn">HOME</h3>
+</div>
+
+    <!-----------------------------SECTION FOR SCORE COUNT CONTAINER  -------------------------------->
+    
+    <div class="numberSection">
+        <div id="guestNumber">0</div>
+        <div id="homeNumber">0</div>
+    </div>
+
+<!-----------------------------SECTION FOR BUTTONS CONTAINER  -------------------------------->
+    <div class="incrementContainer">
+<div class="counterButtonsLeft">
+        <button class="btn" onclick="incrementLeft()">X1</button>
+        <button class="btn" onclick="incrementLeft2()">X2</button>
+        <button class="btn" onclick="incrementLeft3()">X3</button>
+        <button class="reset-btn" onclick="resetLeft()">reset</button>
+</div>
+<div class="counterButtonsRight">
+    <button class="btn" onclick="incrementRight()">X1</button>
+    <button class="btn" onclick="incrementRight2()">X2</button>
+    <button class="btn" onclick="incrementRight3()">X3</button>
+    <button class="reset-btn" onclick="resetRight()">reset</button>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
